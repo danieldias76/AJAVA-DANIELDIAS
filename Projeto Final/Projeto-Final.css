@@ -11,7 +11,7 @@ body{
     align-items: center;
 }
 .Inicio{
-    background-color: green;
+    background-color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between ;
@@ -31,7 +31,12 @@ ul{
     justify-content: space-around;
 }
 li{
-    margin: 5px;
+    margin: 10px;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 .banner{
     display: flex;
@@ -64,33 +69,32 @@ h1{
     justify-content: fl;
 }
 .informacoes{
-    background-color: salmon;
-    padding: 10px;
+    background-color:black;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: row;
 }
 .mapa{
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center ;
-    padding: 10px;
-    margin: 10px;
+    padding: 2px;
+    
 }
 .imgmapa{
     border-radius: 10px;
     margin: 5px;
 }
 .formulario{
-    margin-top: 15px;
-    margin-left: 10px;
     padding: 20px;
     background-color: black;
     border: 3px orange solid;
     border-radius: 20px;
     color: white;
+    height: 441px;
 }
 .conteudo{
     color: white;
@@ -98,21 +102,7 @@ h1{
 .tituloformulario{
     color: orange;
 }
-.input-single{
-    position: relative;
-    margin: 20px 0;
-}
-.input-single label{
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-}
-.caixa{
-    width: 100%;
-    border: 0;
-
-}
-/* .input-single {
+.input-single {
     position: relative;
     margin: 20px 0;
 }
@@ -143,4 +133,24 @@ h1{
     background-color: black;
     padding: 0 5px;
     color: orange;
-} */
+}
+.paibotao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao{
+    background-color: orangered;
+    padding: 10px 60px;
+    border-radius: 60px;
+    color: white;
+    border: 1px solid black;
+}
+h3{
+    color: white;
+}
+hr{
+    border: 1px solid rgb(224, 220, 220);
+    width: 100%;
+    filter: drop-shadow(1px 1px 10px gray);
+}
