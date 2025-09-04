@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dropdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        #btn{
+            padding: 10px;
+            cursor: pointer;
+        }
+        #menuDrop{
+            margin-top: 1px;
+            list-style: none;
+            border: 1px solid black;
+            display: none;
+        }
+        #menuDrop.ativo{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button id="btn" onclick="ativarMenu()">Menu</button>
+
+            <ul id="menuDrop">
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>       
+    </div>
+    <script>
+        const menuDrop = document.getElementById('menuDrop')
+        function ativarMenu(){
+           menuDrop.classList.toggle('ativo')
+        } 
+
+        function removerMenu() {
+            event.stopPropagation
+            console.log('Clicou no documento')
+            menuDrop.classList.remove('ativo')
+
+        }
+        
+        document.addEventListener('click', removerMenu(event))
+    </script>
+</body>
+</html>

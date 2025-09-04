@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #Registro{
+            margin: 10px;
+            background-color: pink;
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="Registro">
+        <label for="nome">Nome
+        <input type="text" name="nome" id="nome" required></label> 
+        <label for="email">Email
+        <input type="email" name="email" id="email" required></label>
+        <label for="senha">Senha
+        <input type="password" name="senha" id="senha" required></label>
+        <button type="submit" class="botao">Enviar</button>
+    </form>
+    <script>
+        const form = window.document.getElementById('Registro')
+        
+        form.addEventListener('submit', function(event){
+        event.preventDefault()
+        const nome = window.document.getElementById('nome').value
+
+        console.log(`O FORMULARIO FOI ENVIADO COM SUCESSO`)
+        window.alert(`Olá, ${nome} FORMULARIO FOI ENVIADO COM SUCESSO`)
+        })
+        
+    </script>
+</body>
+</html>

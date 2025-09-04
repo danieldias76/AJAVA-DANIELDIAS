@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: white;
+    color: red;
+}
+td{
+    padding: 10px;
+    border: re;
+}

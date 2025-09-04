@@ -1,0 +1,5 @@
+Req:
+
+Figma
+Site feito no HTML, CSS E JS
+GIThub

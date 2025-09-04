@@ -1,0 +1,65 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh   ;
+}
+div{
+    background-color: crimson;
+    padding: 10px;
+    border: 3px solid;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.div1{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.div2{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.div3{
+    background-color: chartreuse;
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text1{
+     font-family: "Noto Sans Duployan", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.text2{ font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.text3{
+    font-family: "Sarina", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.text4{
+font-family: "Kanchenjunga", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text5{
+     font-family: "Mogra", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.text6{
+    font-family: "Tiro Tamil", serif;
+  font-weight: 400;
+  font-style: italic;
+}
