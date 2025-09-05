@@ -1,165 +1,241 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
-.Inicio{
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    flex-direction: row;
-    width: 100%;
+
+.Inicio {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  flex-direction: row;
+  width: 100%;
 }
-.Menu{
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
+
+.Menu {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
 }
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-li{
-    margin: 10px;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
+
+li {
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
 }
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+li:hover{
+  color:#FC5E23;
 }
-h1{
-    text-align: center;
-    display: flex;
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+h1 {
+  text-align: center;
+  display: flex;
+}
+.servico{
+  font-size: 60px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+/* Cards */
 .cards{
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  width: 77%;
+  margin: 20px;
 }
 .card{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 25px;
-    width: 500px;
-    margin: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.288);
-    border-radius: 15px;
-    filter: drop-shadow(1px 1px 20px rgba(155, 152, 152, 0.397));
+  margin-left: 50px;
+  margin-right: 60px;
+  width: 340px;
+  height: 550px;
+  padding: 24px;
+   border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: white;
+  max-width: 300px;
+  font-family: sans-serif;
 }
-.cardtitulo{
-     font-size: 10px;
-    font-family: "Inter", sans-serif;
+.card>img{
+  width: 100%;
+  border-radius: 25px;
+}
+.card>h2{
+  margin-top: 5px;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-    display: flex;
-    justify-content: fl;
 }
-.informacoes{
-    background-color:black;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: row;
+.card>p{
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
-.mapa{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center ;
-    padding: 2px;
-    
+.btn{
+  background-color: #FC5E23;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
-.imgmapa{
-    border-radius: 10px;
-    margin: 5px;
+.btn:hover{
+  background-color: black;
+  color: #FC5E23;
 }
-.formulario{
-    padding: 20px;
-    background-color: black;
-    border: 3px orange solid;
-    border-radius: 20px;
-    color: white;
-    height: 441px;
+/* Parte do Mapa*/
+.informacoes {
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59%;
+  border-radius: 15px;
 }
-.conteudo{
-    color: white;
+.mapa {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+
 }
+.imgmapa {
+  border-radius: 10px;
+  margin: 5px;
+}
+.mapa > h3{
+  color: white;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  align-items: center;
+}
+/* Formulário */
 .tituloformulario{
-    color: orange;
+  color: #FC5E23;
+  font-size: 27px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
-.input-single {
-    position: relative;
-    margin: 20px 0;
+.dadosForm{
+  color: white;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  margin: 0 auto;
 }
 
-.input-single label {
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    color: #aaa;
-    pointer-events: none;
-    transition: 0.2s ease all;
+.formulario{
+  padding: 30px;
+  border: #FC5E23  solid 1px;
+  border-radius: 24px;
+  padding-top: 30px;
 }
+.nome{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  
+}
+label{
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  align-items: center;
+  margin-bottom: 5px;
+}
+input, select, textarea{
+  width: 100%;
+  padding: 1px;
+  border: 1px solid white;
+  outline: none;
+  background-color: black;
+  border: none;
+  color: white;
+}
+button{
+  padding: 1px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #FC5E23;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
 
-.caixa {
-    width: 100%;
-    padding: 12px 10px;
-    border: 1px solid #ccc;
-    background: transparent;
-    color: white;
-    font-size: 16px;
-    outline: none;
 }
-.caixa:focus + label,
-.caixa:not(:placeholder-shown) + label {
-    top: -10px;
-    left: 8px;
-    font-size: 12px;
-    background-color: black;
-    padding: 0 5px;
-    color: orange;
+.rodape{
+  background-color: #FC5E23;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 400px;
 }
-.paibotao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.rodape2{
+  background-color: black;
+  width: 100%;
+  height: 300px;
 }
-.botao{
-    background-color: orangered;
-    padding: 10px 60px;
-    border-radius: 60px;
-    color: white;
-    border: 1px solid black;
+.caixa{
+  background-color: black;
+  width: 100%;
+  height: 200px;
 }
-h3{
-    color: white;
-}
-hr{
-    border: 1px solid rgb(224, 220, 220);
-    width: 100%;
-    filter: drop-shadow(1px 1px 10px gray);
-}
-.imgborda{
-    border-radius: 25px;
+.rodape>h1{
+  font-size: 56px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
 }

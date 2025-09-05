@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Final</title>
     <link rel="stylesheet" href="/Projeto Final/Projeto-Final.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="ProjetoFinal.js" defer></script>
 </head>
 
 <body>
     <div class="Inicio"><img src="/Projeto Final/v8 car.png" alt="" width="150px">
         <ul class="Menu">
-            <li>HOME</li>    
+            <li>HOME</li>
             <li>SOBRE NÓS</li>
             <li>SERVIÇOS</li>
             <li>CONTATOS</li>
@@ -25,49 +27,75 @@
         <img src="/Projeto Final/Banner.png" alt="" width="100%">
     </div>
     <br><br><br>
-    <div class="servico">
-    <h1>SERVIÇOS</h1>
+    <h1 class="servico">SERVIÇOS</h1>
     </div>
-    <br><br><br>
     <div class="cards">
-        <div class="card">
-            <img src="/Projeto Final/card1.png" alt="" width="250px" class="imgborda" height="200"><br>
-            <h1 class="cardtitulo">REVISÃO PREVENTIVA COMPLETA.</h1><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempore impedit voluptates beatae,
-                consequuntur dolorum?</p>
+        <div class="card card1">
+            <img src="/Projeto Final/card1.png" alt="" height="203px">
+            <h2>Revisão Preventiva Completa</h2>
+            <p>A revisão preventiva é a melhor forma de evitar surpresas desagradáveis no seu carro. Fazemos uma
+                checagem minuciosa de itens como óleo, freios, pneus, suspensão, bateria e sistema elétrico, garantindo
+                mais segurança e desempenho no dia a dia.</p><br>
+            <button class="btn">Saiba Mais</button>
+
         </div>
-    </div><br><br>
+        <div class="card card2">
+            <img src="/Projeto Final/card 2.png" alt="" height="200px">
+            <h2>Suspensão e Direção</h2><br>
+            <p>A suspensão e a direção são responsáveis pelo conforto e pela estabilidade do veículo. Fazemos a
+                manutenção de amortecedores, molas, buchas e realizamos alinhamento e balanceamento, garantindo uma
+                direção leve e segura.</p><br><br><br>
+            <button class="btn">Saiba Mais</button>
+
+        </div>
+        <div class="card card3">
+            <img src="/Projeto Final/card 3.png" alt="" height="200px">
+            <h2>Troca de Óleo e Filtros</h2><br>
+            <p>O óleo do motor e os filtros são essenciais para o bom funcionamento do veículo. Utilizamos produtos de
+                qualidade e realizamos a troca de forma rápida e eficiente, aumentando a vida útil do motor e evitando
+                gastos desnecessários.</p><br><br><br>
+            <button class="btn">Saiba Mais</button>
+
+        </div>
+    </div>
     <div class="informacoes">
         <div class="mapa">
-            <img src="/fotos/exemplo.webp" alt="" width="280px" class="imgmapa" height="280px"><br>
-            <img src="/fotos/steam-ghlhjssxznri21c5tax15n.webp" alt="" width="1px"><br>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae dicta inventore saepe, non
-                nesciunt nihil harum sit earum id!</h3>
+            <img src="/Projeto Final/mapa.png" alt="" width="280px" class="imgmapa" height="280px"><br>
+            <img src="/Projeto Final/gridicons_location.png" alt="">
+            <img src="/Projeto Final/ENDEREÇO.png" alt=""><br>
+            <h3>Avenida Antônio Cozzi, 806 Jardim Residencial Doutor Lessa - São Paulo - SP - CEP: 12422-510</h3>
         </div>
-        <section class="form">
-            <div class="formulario">
-                <form action="">
-                    <h1>Entre em Contato</h1>
-                    <div class="input-single">
-                        <input type="text" name="" id="nomeCaixa" class="caixa" placeholder="" required>
-                        <label for="nomeCaixa">Nome</label>
-                    </div>
-                    <div class="input-single">
-                        <input type="email" name="" id="emailCaixa" class="caixa" placeholder="" required>
-                        <label for="emailCaixa">Email</label>
-                    </div>
-                    <div class="input-single">
-                        <input type="number" name="" id="numeroCaixa" class="caixa" placeholder="" required>
-                        <label for="numeroCaixa">Telefone</label>
-                    </div>
-                    <div class="input-single">
-                        <input type="text" name="" id="msgCaixa" class="caixa"placeholder="" required>
-                        <label for="msgCaixa">Mensagem</label>
-                    </div><br>
-                    <div class="paibotao"><input type="submit" value="Enviar" class="botao"></div>
-                </form>
-            </div>
-        </section>
+        <div class="formulario">
+            <h1 class="tituloformulario">Entre em Contato</h1>
+            <form id="form">
+                <br>
+
+                <div class="nome">
+                    <label for="name" class="dadosForm">Nome</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="nome">
+                    <label for="email" class="dadosForm">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="nome">
+                <label for="telefone" class="dadosForm">Telefone</label>
+                <input type="tel" id="telefone">
+                </div>
+                <div class="nome">
+                <label for="mensagem" class="dadosForm">Mensagem</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+                <button type="submit" class="botaoForm">Enviar</button>
+            </form>
+        </div>
+        <script src="seuarquivo.js"></script>
+    </div>
+    <br>
+    <div class="rodape">
+        <h1>TRABALHO JS</h1>
+    </div>
+        <div class="caixa">1111111</div>
     </div>
 </body>
 
