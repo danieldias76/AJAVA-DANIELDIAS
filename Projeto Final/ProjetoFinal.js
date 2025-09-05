@@ -35,7 +35,7 @@ form.addEventListener("submit", (event) => {
 });
 
 function enviar() {
-    if (nameInput.value === "ddd" && emailInput.value === "dddd@gmail.com" && telefoneInput.value === "12345" &&  mensagemTextarea.value === "WASD") {
+    if (nameInput.value === "ddd" && emailInput.value === "ddd@gmail.com" && telefoneInput.value === "12345" &&  mensagemTextarea.value === "WASD") {
         alert('Bem-Vindo');
     }
     else{ 
